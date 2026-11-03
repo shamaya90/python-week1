@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+notes.txt
+nites.txt
+demo.txt
+demo2.txt
+log.txt
+profile.json
+scores.csv
+result.json
+repos.csv
