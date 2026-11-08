@@ -19,6 +19,17 @@ def 平均次数():
         return None
     with open(path, encoding="utf-8", newline="") as f:
         r = csv.reader(f)
-        next(r)
-        nums = [int(row[1]) for row in r]
+        rows = list(r)  
+    if len(rows) < 2:
+        return None
+
+    nums = []
+    for row in rows[1:]:  
+        if len(row) < 2:
+            continue
+        try:
+            nums.append(int(row[1]))
+        except ValueError:
+            continue
+
     return sum(nums) / len(nums) if nums else None
