@@ -1,8 +1,12 @@
 import csv
 from datetime import datetime
 from pathlib import Path
+import sys
 
-BASE = Path(__file__).parent
+if getattr(sys, "frozen", False):
+    BASE = Path(sys.executable).parent
+else:
+    BASE = Path(__file__).parent
 
 
 def 存成绩(n):
