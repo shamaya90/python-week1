@@ -1,6 +1,8 @@
 # 猜数字小游戏
 
-> 一键运行：双击 `game.py`，或在终端里 `python game.py`
+> **不想装 Python？** [下载 Windows 单文件版](https://github.com/shamaya90/python-week1/releases/latest)（`gui.exe`，双击即玩）
+>
+> 源码运行：双击 `game.py`，或在终端里 `python game.py`；窗口版是 `gui.py`（需要 tkinter）。
 
 ## 它是什么
 
